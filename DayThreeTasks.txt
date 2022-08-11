@@ -1,0 +1,131 @@
+Task1:
+
+//given object
+let object=[
+    {"person":"John","age":30,"company":"Google"},
+    {"person":"Mohn","age":37,"company":"Flipkart"},
+    {"person":"Kohn","age":38,"company":"Amazon"},
+    {"person":"Sohan","age":40,"company":"Myntra"},
+    {"person":"Jenny","age":70,"company":"Apple"},
+]
+
+//traditional for loop
+for(let i=0;i<object.length;i++){
+    console.log(`
+    Person: ${object[i].person}
+    Age: ${object[i].age}
+    Company: ${object[i].company}
+    `)
+}
+
+//for each loop
+object.forEach((item)=>{
+    console.log(`
+    Person: ${item.person}
+    Age: ${item.age}
+    Company: ${item.company}
+    `)
+})
+
+//for...in loop
+for (var key in object){
+   console.log(`
+   Person: ${object[key].person}
+   Age: ${object[key].age}
+   Company: ${object[key].company}
+   `)
+}
+
+//for...of loop
+for (var key of object){
+    console.log(`
+    Person: ${key.person}
+    Age: ${key.age}
+    Company: ${key.company}
+    `)
+ }
+
+ //output is same for all for loops
+ Person: John
+ Age: 30
+ Company: Google
+ 
+ Person: Mohn
+ Age: 37
+ Company: Flipkart
+ 
+ Person: Kohn
+ Age: 38
+ Company: Amazon
+ 
+ Person: Sohan
+ Age: 40
+ Company: Myntra
+ 
+ Person: Jenny
+ Age: 70
+ Company: Apple
+
+----------------------------------------------------
+
+Task2:
+
+
+ resume={
+    name: 'Satish Ganesan',
+    Designation: 'ASE - Trainee',
+    mail: 'ganesansatishm7@gmail.com',
+    mobile: 9888889999,
+    careerObjective: 'To obtain a challenging career where I can learn,grow and help',
+    academicCredentials: [
+        {
+            institution: 'GITAM university',
+            passedOutYear: 2020,
+            marksPercentage: '78%',
+            level: 'UG'
+        },
+        {
+            institution: 'Sri Gayatri Academy',
+            passedOutYear: 2016,
+            marksPercentage: '88%',
+            level: 'Intermediate'
+        },
+        {
+            institution: 'Little Flower High School',
+            passedOutYear: 2014,
+            marksPercentage: '93%',
+            level: 'SSC'
+        }
+    ],
+    workingExperience: {
+        duration: '1.3 years',
+        company: 'TCS',
+        role: 'SQL developer ',
+        keyResponsibilities: 'Data import, procedure execution, data analysis....'
+    },
+    skills:[
+        'C',
+        'Java',
+        'HTML',
+        'CSS',
+        'Javascript',
+        'SQL(SSMS)'
+    ],
+    personalityTraits:[
+        'quick learnig',
+        'adaptable to changes',
+        'leadership skills'
+    ],
+    projects:[
+        'Smart protection for Women',
+        'Online Grocery Store',
+        'Whatsapp chat Sentiment Analysis'
+    ],
+    languagesKnown:[
+        'Telugu',
+        'English',
+        'Hindi',
+        'Tamil'
+    ]
+
+ }
