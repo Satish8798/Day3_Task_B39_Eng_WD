@@ -76,6 +76,7 @@ Task2:
     Designation: 'ASE - Trainee',
     mail: 'ganesansatishm7@gmail.com',
     mobile: 9888889999,
+    DoB: '8th JUL 1998',
     careerObjective: 'To obtain a challenging career where I can learn,grow and help',
     academicCredentials: [
         {
